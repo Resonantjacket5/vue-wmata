@@ -34,7 +34,12 @@ Wmata api
 https://developer.wmata.com/docs/services/
 
 
-## Circle CI
+## Continuous Integration
 
-### How to set up secrets
+### How to set up circle ci and secrets
+
 https://github.com/circleci/encrypted-files
+
+
+### Setting up deployment
+https://surge.sh/help/integrating-with-circleci
