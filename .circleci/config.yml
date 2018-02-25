@@ -38,6 +38,7 @@ jobs:
       - run: npm install
       # have npm build to dist folder
       - run: npm run build 
+      - run: openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
       - run: node_modules/.bin/surge --project ./dist --domain vue-dc-metro.surge.sh
 
 workflows:
