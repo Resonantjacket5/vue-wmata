@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+[![CircleCI](https://circleci.com/gh/Resonantjacket5/vue-wmata.svg?style=svg)](https://circleci.com/gh/Resonantjacket5/vue-wmata)
+
 ## Build Setup
 
 ``` bash
