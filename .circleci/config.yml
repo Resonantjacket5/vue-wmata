@@ -31,3 +31,22 @@ jobs:
         
       # run tests!
       - run: npm test
+
+  deploy:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:8.9
+    commands:
+      # have npm build to dist folder
+      - run: npm run build 
+      - run: surge --project ./dist --domain vue-dc-metro.surge.sh
+
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - build
+      - deploy:
+        requires:
+          - build
+    
