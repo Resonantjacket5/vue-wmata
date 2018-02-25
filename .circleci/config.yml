@@ -29,7 +29,7 @@ jobs:
       #     key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: npm test
+      - run: npm run unit
 
   deploy:
     docker:
@@ -41,12 +41,12 @@ jobs:
       - run: npm run build 
       - run: surge --project ./dist --domain vue-dc-metro.surge.sh
 
-workflows:
-  version: 2
-  test_and_deploy:
-    jobs:
-      - build
-      - deploy:
-        requires:
-          - build
+# workflows:
+#   version: 2
+#   test_and_deploy:
+#     jobs:
+#       - build
+#       - deploy:
+#         requires:
+#           - build
     
