@@ -31,9 +31,9 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.9
-      dependencies:
-        pre:
-          - run: openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
+    dependencies:
+      pre:
+        - run: openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
 
     working_directory: ~/repo
     steps:
