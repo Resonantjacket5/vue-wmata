@@ -28,3 +28,13 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+Wmata api
+https://developer.wmata.com/docs/services/
+
+
+## Circle CI
+
+### How to set up secrets
+https://github.com/circleci/encrypted-files
