@@ -38,7 +38,7 @@ jobs:
       - run: npm install
       # have npm build to dist folder
       - run: npm run build 
-      - run: surge --project ./dist --domain vue-dc-metro.surge.sh
+      - run: node_modules/.bin/surge --project ./dist --domain vue-dc-metro.surge.sh
 
 workflows:
   version: 2
